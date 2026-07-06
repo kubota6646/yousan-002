@@ -1,0 +1,15 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - echo "No build step needed for static site"
+    build:
+      commands:
+        - echo "Static site — nothing to build"
+  artifacts:
+    baseDirectory: /   # index.html がルートにある場合
+    files:
+      - '**/*'
+  cache:
+    paths: []
